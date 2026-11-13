@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=AI Desktop Assistant
+Comment=Launcher locale con LFM3-Omni
+Exec=ai-assistant run
+Icon=system-search
+Terminal=false
+Categories=Utility;
+StartupNotify=true

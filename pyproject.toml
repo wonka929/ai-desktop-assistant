@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-desktop-assistant"
+version = "0.1.0"
+description = "GNOME launcher locale con LFM3-Omni via llama.cpp"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "httpx>=0.27",
+]
+
+[project.scripts]
+ai-assistant = "assistant.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+assistant = ["data/*"]
